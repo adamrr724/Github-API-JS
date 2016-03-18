@@ -51,5 +51,6 @@ exports.getDetails = function(username) {
     } else {
       $('.details').append("This user has not set up an email.<br>");
     }
+
 });
 };
