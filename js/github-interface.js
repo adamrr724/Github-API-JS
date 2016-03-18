@@ -5,7 +5,6 @@ exports.getRepos = function(username){
   $('.showRepos').empty();
 
   $.get('https://api.github.com/users/' + username  + '?access_token=' + apiKey).then(function(response){
-    console.log(response);
     $('.showOwner').append("<h1>" + response.login + "'s Repositories:</h1>");
     $('.showOwner').append("<img src=" + response.avatar_url + ">");
     $('.showOwner').append("<h3> Followers: <h2>" + response.followers + "</h2></h3>" );
