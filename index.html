@@ -16,10 +16,16 @@
     <div class="container">
       <h1>Take a look at some github repositories!</h1>
       <label for="repositories">Enter a github username:</label>
-      <input id="repositories" type="text">
+      <input id="repository" type="text">
       <button class="btn-success" id="getRepos">Get this users Repo's!</button>
+      <div class="showOwner"></div>
+      <div class="buttons">
+        <button id="details" type="submit" name="details">See details</button>
+        <button id="hide" type="submit" name="hide">Hide</button>
+        <div class="details">
+        </div>
+      </div>
       <div class="showRepos"></div>
-
     </div>
   </body>
 </html>
