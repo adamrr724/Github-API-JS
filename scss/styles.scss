@@ -1,3 +1,10 @@
+
+
+
+body {
+  text-align: center;
+}
+
 #details {
   display: none;
 }
@@ -5,3 +12,18 @@
 #hide {
   display: none;
 }
+
+img {
+   height: 8em;
+ }
+
+.body {
+   background-color: #d3d3d3;
+   border-radius: 5px;
+   padding-top: 2em;
+   padding-bottom: 2em;
+ }
+
+ #getRepos {
+   margin-top: 10px;
+ }

@@ -5,7 +5,12 @@ exports.getRepos = function(username){
   $('.showRepos').empty();
 
   $.get('https://api.github.com/users/' + username  + '?access_token=' + apiKey).then(function(response){
+    console.log(response);
     $('.showOwner').append("<h1>" + response.login + "'s Repositories:</h1>");
+    $('.showOwner').append("<img src=" + response.avatar_url + ">");
+    $('.showOwner').append("<h3> Followers: <h2>" + response.followers + "</h2></h3>" );
+    $('.showOwner').append("<h3> Following: <h2>" + response.following + "</h2></h3>" );
+    $('.showOwner').append("<h3> # of Public Repos: <h2>" + response.public_repos + "</h2></h3>" );
 
   $.get('https://api.github.com/users/' + username  + '/repos?access_token=' + apiKey).then(function(respositories){
     respositories.forEach(function(repo) {
