@@ -15,18 +15,18 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Github API</h1>
+        <h1 id="head"><img class="githubpics" src="http://people.mozilla.org/~dietrich/psu2014/imgs/github.png" alt="" />Github API<img class="githubpics" src="http://people.mozilla.org/~dietrich/psu2014/imgs/github.png" alt="" /></h1>
         <h3>Take a look at some github repositories!</h3>
       </div>
       <div class="body">
         <label for="repositories">Enter a github username:</label>
         <input id="repository" type="text"> <br>
-        <button class="btn-success" id="getRepos">Get this users Repo's!</button>
+        <button class="btn-primary" id="getRepos">Get this users Repo's!</button>
         <div class="showOwner"></div>
         <br>
         <div class="buttons">
-          <button id="details" type="submit" name="details">See details</button>
-          <button id="hide" type="submit" name="hide">Hide</button>
+          <button class="btn-success" id="details" type="submit" name="details">See details</button>
+          <button class="btn-danger"  id="hide" type="submit" name="hide">Hide</button>
           <br>
           <br>
           <div class="details">

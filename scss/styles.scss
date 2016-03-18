@@ -7,18 +7,22 @@ body {
 
 #details {
   display: none;
+  border-radius: 5px;
 }
 
 #hide {
   display: none;
+  border-radius: 5px;
 }
 
 img {
    height: 8em;
+   border-radius: 5px;
+   box-shadow: 5px 5px 5px #696969;
  }
 
 .body {
-   background-color: #d3d3d3;
+   background-color: #ADD8E6;
    border-radius: 5px;
    padding-top: 2em;
    padding-bottom: 2em;
@@ -27,3 +31,19 @@ img {
  #getRepos {
    margin-top: 10px;
  }
+
+ .githubpics {
+   height: 40px;
+   box-shadow: none;
+   margin-left: 15px;
+   margin-right: 15px;
+ }
+
+#head {
+  color: #00688B;
+  text-shadow: 1px .5px 1px #696969;
+}
+
+.jumbotron {
+  background-color: #EDC393;
+}
